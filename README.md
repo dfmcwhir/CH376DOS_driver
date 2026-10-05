@@ -6,7 +6,9 @@ DOS Driver for the CH376 chip to enable usb mass storage. Made using AI, may hav
 
 While working with AI to create this driver, the initial versions would fail to write to the drive and also led to corrupted on my drive causing me to after reformat it. That is why there is a debugging mode in the driver now. The problem was fixed and this version seems to be working to me.
 
-BUILD   nasm -f bin ch376dos.asm -o ch376dos.sys <br>
+BUILD:   nasm -f bin ch376dos.asm -o ch376dos.sys <br>
+<br>
+Usage: <br>
 CONFIG.SYS<br>
 DEVICE=C:\CH376\CH376DOS.SYS @260 #0 %2 +<br><br>
  @hhh = I/O base address in HEX (default 260). <br>
