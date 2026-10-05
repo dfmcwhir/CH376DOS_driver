@@ -4,7 +4,7 @@ CH376DOS mass storage usb driver for DOS
 
 DOS Driver for the CH376 chip to enable usb mass storage. Made using AI, may have bugs, may corrupt your drive, use with caution! It does work for me on an ISA card with a CH376 module on it addressed at a base address of 260h. I successfully did read and writes a 1GB thumb drive formatted as FAT in non-interrupt mode. No speed or other testing has been done
 
-While working with AI to create this driver, the initial versions would fail to write to the drive and also led to corrupted on my drive causing me to after reformat it. That is why there is a debugging mode in the driver now. The problem was fixed and this version seems to be working to me.
+While working with AI to create this driver, the initial versions would fail to write to the drive and also led to corruption on my drive causing me to have to reformat it. That is why there is a debugging mode in the driver now. The problem was fixed and this version seems to be working to me.
 
 BUILD:   nasm -f bin ch376dos.asm -o ch376dos.sys <br>
 <br>
